@@ -38,9 +38,10 @@ product-hunt-qa/
 ├── playwright.config.ts
 ├── test-strategy.md
 └── exploratory-security-findings.md
+```
 
-Test Coverage
-E2E Tests — Playwright
+## Test Coverage
+### E2E Tests — Playwright
 
 5 scenarios covering:
 
@@ -49,7 +50,8 @@ Product search returns results
 Header navigation works
 Empty search displays the appropriate message
 Product category navigation works
-API Tests — Bun + GraphQL
+
+### API Tests — Bun + GraphQL
 
 5 scenarios covering:
 
@@ -70,10 +72,11 @@ Invalid authentication token handling
 Clone the repository and install dependencies:
 
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone https://github.com/shazianasim9932/product-hunt-qa.git
 cd product-hunt-qa
 bun install
 bunx playwright install
+```
 
 Create a .env file in the project root:
 
@@ -105,6 +108,7 @@ Use only:
 
 ```env
 PRODUCT_HUNT_TOKEN=your_product_hunt_token
+```
 
 Your real .env stays local and is protected by .gitignore
 
@@ -185,5 +189,3 @@ With additional time, I would extend the assessment with:
 - API schema/contract validation
 - Test data management improvements
 - GitHub Actions reporting and test artifacts
-
-This project was created using `bun init` in bun v1.4.0. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
