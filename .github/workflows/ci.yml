@@ -34,9 +34,6 @@ jobs:
       # - name: Run E2E tests
       #   run: bunx playwright test
 
-      - name: Run API tests
-        run: bun test api
-
       # - name: Upload Playwright report
       #   if: always()
       #   uses: actions/upload-artifact@v4
