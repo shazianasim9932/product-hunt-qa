@@ -35,7 +35,7 @@ jobs:
       #   run: bunx playwright test
 
       - name: Run API tests
-        run: bunx API test
+        run: bun test api
 
       # - name: Upload Playwright report
       #   if: always()
