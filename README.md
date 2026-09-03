@@ -50,6 +50,10 @@ Product search returns results
 Header navigation works
 Empty search displays the appropriate message
 Product category navigation works
+ 
+ E2E tests were diabled on github actions because of cloudflare blocking the request.
+
+ ![](docs/cloudflare.png)
 
 ### API Tests — Bun + GraphQL
 
@@ -167,6 +171,10 @@ Detailed observations are documented in:
 The overall testing approach is documented in:
 
 `test-strategy.md`
+ 
+ ## How to run test
+ - bunx playwright test  
+ - bun test api
 
 ## CI/CD
 
@@ -189,3 +197,4 @@ With additional time, I would extend the assessment with:
 - API schema/contract validation
 - Test data management improvements
 - GitHub Actions reporting and test artifacts
+
